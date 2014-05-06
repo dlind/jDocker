@@ -10,7 +10,7 @@
     <groupId>com.kpelykh</groupId>
     <artifactId>docker-java</artifactId>
     <packaging>jar</packaging>
-    <version>0.8.1</version>
+    <version>0.8.1-Docker10fixes</version>
 
     <name>docker-java</name>
     <url>https://github.com/kpelykh/docker-java</url>

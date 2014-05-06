@@ -20,6 +20,14 @@ public class HostConfig {
     @JsonProperty("LxcConf")
     private LxcConf[] lxcConf;
 
+    @JsonProperty("Dns")
+    private String[] dns;
+    
+    @JsonProperty("VolumesFrom")
+    private String[] volumesFrom;
+
+    @JsonProperty("DnsSearch")
+    private String[] dnsSearch;
 
     @JsonProperty("Links")
     private String[] links;
@@ -32,6 +40,29 @@ public class HostConfig {
 
     @JsonProperty("PublishAllPorts")
     private boolean publishAllPorts;
+    
+    public String[] getVolumesFrom() {
+      return volumesFrom;
+    }
+
+    public void setVolumesFrom(String[] volumesFrom ) {
+      this.volumesFrom = volumesFrom;
+    }
+
+    public String[] getDnsSearch() {
+      return dnsSearch;
+    }
+    public void setDnsSearch( String[] dnsSearch ) {
+      this.dnsSearch = dnsSearch;
+    }
+
+    public String[] getDns() {
+      return dns;
+    }
+
+    public void setDns( String[] dns ) {
+      this.dns = dns;
+    }
 
     public HostConfig() {
         this.binds = null;

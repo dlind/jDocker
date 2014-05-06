@@ -61,6 +61,9 @@ public class ContainerInspectResponse {
     @JsonProperty("Driver")
     private String driver;
 
+    @JsonProperty("ExecDriver")
+    private String execDriver;
+
     @JsonProperty("HostConfig")
     private HostConfig hostConfig;
 
@@ -190,6 +193,14 @@ public class ContainerInspectResponse {
 
     public void setDriver(String driver) {
         this.driver = driver;
+    }
+    
+    public String getExecDriver() {
+        return execDriver;
+    }
+
+    public void setExecDriver(String execDriver) {
+        this.execDriver = execDriver;
     }
 
     public HostConfig getHostConfig() {
